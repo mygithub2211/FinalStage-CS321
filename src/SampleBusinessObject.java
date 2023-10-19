@@ -9,7 +9,7 @@ public class SampleBusinessObject{
     public static SampleBusinessObject createBO(int ID){
         return new SampleBusinessObject(ID);
     }
-    public void setID(int ID){
+    private void setID(int ID){
         this.id = ID;
     }
     public int getID(){
