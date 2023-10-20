@@ -45,6 +45,7 @@ public class Iteration3Testing{
      */
     @Test
     public void testName(){
+        
        applicant = new Applicant();
        approver = new Approver();
        
@@ -55,6 +56,7 @@ public class Iteration3Testing{
        //checking if the name contains letters only
        assertTrue(applicant.getName().matches("^[a-zA-Z]*$"));
        assertTrue(approver.getName().matches("^[a-zA-Z]*$"));
+        
     }
 
     /**
@@ -62,6 +64,7 @@ public class Iteration3Testing{
      */
     @Test
     public void testWF(){
+        
         dataEntry = new DataEntry();
         approval = new Approval();
         applicant = new Applicant();
@@ -71,6 +74,7 @@ public class Iteration3Testing{
         assertEquals(applicant.LoadWF().getClass(), dataEntry.getClass());
         //test if LoadWF() returns Approval object
         assertEquals(approver.LoadWF().getClass(), approval.getClass());
+        
     }
 
     /**
@@ -106,6 +110,7 @@ public class Iteration3Testing{
      */
     @Test
     void getIDTests(){
+        
         workFlow = new WorkFlow();
         workFlowId = 394797;
         workFlow.setID(workFlowId);
@@ -120,5 +125,6 @@ public class Iteration3Testing{
         workFlowId = 459082;
         workFlow.setID(workFlowId);
         assertEquals(workFlow.getID(), workFlowId);
+        
     }
 }
