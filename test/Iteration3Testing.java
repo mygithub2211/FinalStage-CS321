@@ -109,7 +109,7 @@ public class Iteration3Testing{
      * Testing method that will execute all of the tests for the getID() method.
      */
     @Test
-    void test2SetGetID(){
+    void testSetGetID(){
         
         workFlow = new WorkFlow();
         workFlowId = 394797;
