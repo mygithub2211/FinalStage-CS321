@@ -109,7 +109,7 @@ public class Iteration3Testing{
      * Testing method that will execute all of the tests for the getID() method.
      */
     @Test
-    void getIDTests(){
+    void test2SetGetID(){
         
         workFlow = new WorkFlow();
         workFlowId = 394797;
@@ -126,5 +126,57 @@ public class Iteration3Testing{
         workFlow.setID(workFlowId);
         assertEquals(workFlow.getID(), workFlowId);
         
+    }
+
+    //THE BELOW TESTS ARE FOR THE APPROVER CLASS
+    
+    /**
+     * First test for the getName method.
+     */
+    @Test
+    void getName1(){
+       approver = new Approver();
+       approver.setName("SName");
+       assertEquals(approver.getName(), "SName"); 
+    }
+
+    /**
+     * Second test for the getName.
+     */
+    @Test
+    void getName2(){
+        approver = new Approver();
+        approver.setName("Joe");
+        assertEquals(approver.getName(), "Joe");
+    }
+
+    /**
+     * Third test for the getName.
+     */
+    @Test
+    void getName3(){
+        approver = new Approver();
+        approver.setName("Hashy");
+        assertEquals(approver.getName(), "Hashy");
+    }
+
+    /**
+     * Fourth test for the getName.
+     */
+    @Test
+    void getName4(){
+        approver = new Approver();
+        approver.setName("Johnathon");
+        assertEquals(approver.getName(), "Johnathon");
+    }
+
+    /**
+     * Fifth test for the getName.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+     */
+    @Test
+    void getName5(){
+        approver = new Approver();
+        approver.setName("Johann");
+        assertEquals(approver.getName(), "Johann");
     }
 }
